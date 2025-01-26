@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
+    text-align: center;
+  }
+  
+  header {
+    padding: 20px;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .content-wrapper {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+  /* Text Content */
+  .text-content {
+    max-width: 500px;
+    text-align: left;
+    padding: 0 20px;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: #aaa;
+    margin: 10px 0 20px;
+  }
+  
+  .download-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 15px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    gap: 8px;
+    transition: transform 0.2s ease;
+  }
+  
+  .download-button img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .download-button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Phone Mockup */
+  .mockup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .phone {
+    position: relative;
+    width: 300px;
+    height: 600px;
+    background-color: #111;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .phone .notch {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 20px;
+    background-color: #222;
+    border-radius: 10px;
+  }
+  
+  .phone .screen {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-color: #000;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  .phone .screen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .phone-borders {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 30px;
+    border: 8px solid #000;
+    pointer-events: none;
+  }
+  
+  /* Features Section */
+  .features {
+    margin: 30px 20px;
+  }
+  
+  .features ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .features li {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    margin: 30px 20px;
+  }
+  
+  .testimonials blockquote {
+    font-style: italic;
+    margin: 20px 0;
+  }
+  
